@@ -1,0 +1,398 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trocchi', serif;
+    color: #3C332A;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 233, 233);
+    height: 100vh;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, .navbar, .button, a, button, label, legend, .show-park-container button{
+    font-family: 'Rubik', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+label{
+    font-size: larger;
+}
+
+.form-check-label{
+    font-family: 'Trocchi', serif;
+    font-size: medium;
+}
+
+.btn-primary {
+    background-color: #F2902D;
+    border-radius: 10px;
+    border-color: #F2902D;
+    color: black;
+}
+
+/*Navigation*/
+.navbar {
+    background-color: #3C332A;
+}
+
+.fa-user {
+    color: #F3F2EF;
+}
+
+.dropdown-menu {
+    right: -35px !important;
+    left: auto !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: #3C332A;
+}
+
+.parkstable{
+    padding: 2%;
+}
+
+.parkstable table{
+    width: 100%;
+    
+}
+
+.parkstable table td{
+    font-family: 'Noto', serif;
+    font-size: large;
+}
+
+/*Parks Index*/
+.addparksbutton {
+    background-color: #D5E200;
+    border-radius: 30px;
+    border-color: #D5E200;
+    color: black;
+    padding: 15px;
+    margin-right: 30px;
+    margin-left: 4%;
+    text-decoration: none;
+}
+
+.parkstable{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.parkstable td{
+    cursor: pointer;
+    font-family: 'Noto', serif;
+}
+
+/*Add Park Page*/
+.form {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.form-check-input {
+    height: 25px;
+    width: 25px;
+}
+
+input {
+    /*background-color: rgba(0, 0, 0, 0) !important;*/
+    border: white 1px solid !important;
+}
+
+textarea {
+    border: white 1px solid !important;
+    height: 30px;
+}
+
+.form-control:focus {
+    border-color: #d1cbb8!important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(220, 215, 206, 0.6)!important;
+}
+
+::placeholder {
+    font-family: 'Trocchi', serif;
+}
+
+#dragger_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #dcd7ce;
+}
+
+#dragger {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed #fbfbfb;
+    border-radius: 18px;
+    background-color: #dcd7ce;
+}
+
+#dragger.active {
+    border: 2px dashed black;
+    width: auto;
+    height: auto;
+    max-width: 50%;
+}
+
+#dragger img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imageicon {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+h2,
+h3 {
+    font-family: 'Rubik', sans-serif;
+    margin: 5px 0;
+    text-align: center;
+}
+
+#filename {
+    width: 100%;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-trash-can {
+    color: red;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #F2902D;
+    border-radius: 10px;
+    border-color: #F2902D;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #D5E200;
+    border-color: #D5E200;
+    color: black;
+}
+
+.browseFileBtn {
+    margin-bottom: 2%;
+}
+
+.park-error-message{
+    color: red;
+}
+
+/*Show park page*/
+.show-park-container{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 2% 10% 5% 10%;
+    padding: 2%;
+}
+
+.show-park-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-park-image img{
+    width: 50%;
+    height: auto;
+}
+
+.show-park-container h2{
+    font-size: large;
+}
+
+.show-park-container p{
+    font-family: 'Noto', serif;
+    font-size: large;
+    text-align: center;
+}
+
+.show-park-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.show-park-button{
+    background-color: #D5E200;
+    border-radius: 30px;
+    border-color: #D5E200;
+    color: black;
+    padding: 15px;
+    margin-right: 30px;
+    margin-left: 4%;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.deleteparkbutton{
+    background-color: red;
+    border-radius: 30px;
+    border-color: #D61F2C;
+    color: black;
+    padding: 15px;
+    margin-right: 30px;
+    margin-left: 4%;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.headnbutton{
+    display: block;
+}
+
+/*Login and register page*/
+.loginform {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #F3F2EF;
+    border-radius: 10px;
+}
+
+h1, input[type="submit"]{
+    font-family: 'Rubik', sans-serif;
+}
+
+.loginform h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    margin-top: 15px;
+}
+
+.loginform p{
+    color: red;
+    margin-top: 10px;
+}
+
+.loginform form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none!important;
+    outline: none!important;
+    background-color: #F3F2EF;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #767676;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #3C332A;
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #3C332A;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+.forgotpass {
+    margin: -5px 0 0 5px;
+    color: #767676;
+    cursor: pointer;
+}
+
+.forgotpass a{
+    text-decoration: none;
+    color: #767676;
+}
+
+.forgotpass:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #F3F2EF!important;
+    background: #D5E200;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    margin: 30px 0;
+}
+
+input[type="submit"]:hover {
+    border-color: #F2902D;
+    transition: .5s;
+    border: 2px solid #D5E200!important;
+}
+
+.categorysection{
+    background-color: #f1f1f1;
+    padding: 2%; 
+    border-radius: 10px; 
+    margin: 3%;
+}
+
+/*notification*/
+.dropdown .notification li{
+    font-family: 'Noto', serif !important;
+}
